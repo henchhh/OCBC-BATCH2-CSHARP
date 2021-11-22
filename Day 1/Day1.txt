@@ -103,12 +103,17 @@ git remote -v
 bermain git
 ---
 git init
-git add README.md
-git commit -m first commit
+git config --global user.email "you@example.com"
+git config --global user.name "Your Name"
 git remote add origin https://github.com/henchhh/OCBC-BATCH2-CSHARP.git
+git remote set-url https://github.com/henchhh/OCBC-BATCH2-CSHARP.git
+git commit -m "Belajar C#"
 git checkout -b main
 git pull origin main --allow-unrelated-histories
 git push -u origin main
+git add README.md
+
+
 
 referensi
 ---
