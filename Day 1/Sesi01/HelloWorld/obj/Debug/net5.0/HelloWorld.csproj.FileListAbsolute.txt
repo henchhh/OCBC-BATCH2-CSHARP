@@ -1,0 +1,16 @@
+C:\Users\d34nd\Documents\OCBC NISP IT Neon 2021\Learning\Day 1\Sesi01\HelloWorld\bin\Debug\net5.0\HelloWorld.exe
+C:\Users\d34nd\Documents\OCBC NISP IT Neon 2021\Learning\Day 1\Sesi01\HelloWorld\bin\Debug\net5.0\HelloWorld.deps.json
+C:\Users\d34nd\Documents\OCBC NISP IT Neon 2021\Learning\Day 1\Sesi01\HelloWorld\bin\Debug\net5.0\HelloWorld.runtimeconfig.json
+C:\Users\d34nd\Documents\OCBC NISP IT Neon 2021\Learning\Day 1\Sesi01\HelloWorld\bin\Debug\net5.0\HelloWorld.runtimeconfig.dev.json
+C:\Users\d34nd\Documents\OCBC NISP IT Neon 2021\Learning\Day 1\Sesi01\HelloWorld\bin\Debug\net5.0\HelloWorld.dll
+C:\Users\d34nd\Documents\OCBC NISP IT Neon 2021\Learning\Day 1\Sesi01\HelloWorld\bin\Debug\net5.0\ref\HelloWorld.dll
+C:\Users\d34nd\Documents\OCBC NISP IT Neon 2021\Learning\Day 1\Sesi01\HelloWorld\bin\Debug\net5.0\HelloWorld.pdb
+C:\Users\d34nd\Documents\OCBC NISP IT Neon 2021\Learning\Day 1\Sesi01\HelloWorld\obj\Debug\net5.0\HelloWorld.csproj.AssemblyReference.cache
+C:\Users\d34nd\Documents\OCBC NISP IT Neon 2021\Learning\Day 1\Sesi01\HelloWorld\obj\Debug\net5.0\HelloWorld.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\d34nd\Documents\OCBC NISP IT Neon 2021\Learning\Day 1\Sesi01\HelloWorld\obj\Debug\net5.0\HelloWorld.AssemblyInfoInputs.cache
+C:\Users\d34nd\Documents\OCBC NISP IT Neon 2021\Learning\Day 1\Sesi01\HelloWorld\obj\Debug\net5.0\HelloWorld.AssemblyInfo.cs
+C:\Users\d34nd\Documents\OCBC NISP IT Neon 2021\Learning\Day 1\Sesi01\HelloWorld\obj\Debug\net5.0\HelloWorld.csproj.CoreCompileInputs.cache
+C:\Users\d34nd\Documents\OCBC NISP IT Neon 2021\Learning\Day 1\Sesi01\HelloWorld\obj\Debug\net5.0\HelloWorld.dll
+C:\Users\d34nd\Documents\OCBC NISP IT Neon 2021\Learning\Day 1\Sesi01\HelloWorld\obj\Debug\net5.0\ref\HelloWorld.dll
+C:\Users\d34nd\Documents\OCBC NISP IT Neon 2021\Learning\Day 1\Sesi01\HelloWorld\obj\Debug\net5.0\HelloWorld.pdb
+C:\Users\d34nd\Documents\OCBC NISP IT Neon 2021\Learning\Day 1\Sesi01\HelloWorld\obj\Debug\net5.0\HelloWorld.genruntimeconfig.cache
