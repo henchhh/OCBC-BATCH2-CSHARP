@@ -102,6 +102,7 @@ git remote -v
 
 bermain git
 ---
+NEW GIT
 git init
 git config --global user.email "you@example.com"
 git config --global user.name "Your Name"
@@ -113,6 +114,13 @@ git pull origin main --allow-unrelated-histories
 git push -u origin main
 git add README.md
 
+UPDATE FROM LOCAL TO github
+git init
+git add -A
+git commit -m "bebas isinya"
+git checkout main
+git pull origin main --allow-unrelated-histories
+git push -u origin main
 
 
 referensi
