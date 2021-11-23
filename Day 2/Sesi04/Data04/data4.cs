@@ -5,7 +5,7 @@ namespace Data04
     public class data4{
         public static void Main(string[] args)
         {
-            int x = 1, y;
+            int x = 1;
             int[,] data4 = new int[10,2];
 
             for(int i=0; i<10; i++)
@@ -14,12 +14,11 @@ namespace Data04
                 {
                     if(j==0){
                         data4[i,j] = x;
-                        Console.Write(x+" ");
+                        Console.Write(data4[i,j]+" ");
                     }
                     else{
-                        y = x*x;
-                        data4[i,j] = y;
-                        Console.Write(y+" ");
+                        data4[i,j] = x*x;
+                        Console.Write(data4[i,j]+" ");
                     }
                 }
                 x++;
