@@ -1,8 +1,8 @@
 using System;
 
-namespace Assignment_All_01
+namespace FSDO002ONL013_DeandriFirdaus_Assignment1
 {
-    public class Assigment1
+    public class FSDO002ONL013_DeandriFirdaus_Assignment1
     {
         public static void Main(string[] args)
         {
