@@ -55,11 +55,11 @@ alamat : bandar lampung
 pilih menu soal
 1. soal a (disingkat aja untuk deskripsi soalnya)
 2. soal b (disingkat aja untuk deskripsi soalnya)
-4. soal c (disingkat aja untuk deskripsi soalnya)
-5. soal d (disingkat aja untuk deskripsi soalnya)
-6. soal e (disingkat aja untuk deskripsi soalnya)C:\Users\User\003_Alwi Azra Akbar Djunaid_Assignment1\Program.cs
-7. about / tentang saya
-8. exit
+3. soal c (disingkat aja untuk deskripsi soalnya)
+4. soal d (disingkat aja untuk deskripsi soalnya)
+5. soal e (disingkat aja untuk deskripsi soalnya)C:\Users\User\003_Alwi Azra Akbar Djunaid_Assignment1\Program.cs
+6. about / tentang saya
+7. exit
 
 jika pilih 1 akan nampil jawaban soal a, sample :
 anda memilih soal a
