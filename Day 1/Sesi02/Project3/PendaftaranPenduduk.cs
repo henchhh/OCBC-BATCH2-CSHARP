@@ -10,11 +10,11 @@ namespace Project3
             int umur;
 
             Console.WriteLine("=== PROGRAM PENDAFTARAN PENDUDUK ===");
-            Console.WriteLine("Masukkan nama: ");
+            Console.Write("Masukkan nama: ");
             nama = Console.ReadLine();
-            Console.WriteLine("Masukkan alamat: ");
+            Console.Write("Masukkan alamat: ");
             var alamat = Console.ReadLine();
-            Console.WriteLine("Masukkan umur: ");
+            Console.Write("Masukkan umur: ");
             umur = int.Parse(Console.ReadLine());
 
             Console.WriteLine();

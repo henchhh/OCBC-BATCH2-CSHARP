@@ -12,8 +12,8 @@ namespace HitungNilai2
             nilai1 = 15;
             Console.WriteLine($"nilai1: {nilai1}");
 
-            nilai1 += 6;
-            Console.WriteLine($"nilai1: {nilai2}");
+            nilai2 += 6;
+            Console.WriteLine($"nilai2: {nilai2}");
         }
     }
 }

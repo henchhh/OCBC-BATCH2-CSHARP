@@ -10,11 +10,11 @@ namespace HitungNilai
             double rata;
 
             Console.WriteLine("===Menghitung Nilai===");
-            Console.WriteLine("Masukkan nilai PERTAMA: ");
+            Console.Write("Masukkan nilai PERTAMA: ");
             pertama = int.Parse(Console.ReadLine());
-            Console.WriteLine("Masukkan nilai KEDUA: ");
+            Console.Write("Masukkan nilai KEDUA: ");
             kedua = int.Parse(Console.ReadLine());
-            Console.WriteLine("Masukkan nilai KETIGA: ");
+            Console.Write("Masukkan nilai KETIGA: ");
             ketiga = int.Parse(Console.ReadLine());
 
             total = pertama + kedua + ketiga;

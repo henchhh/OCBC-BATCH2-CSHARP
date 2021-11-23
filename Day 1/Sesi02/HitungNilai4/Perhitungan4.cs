@@ -6,9 +6,9 @@ namespace HitungNilai4
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Enter your age: ");
+            Console.Write("Enter your age: ");
             int age = int.Parse(Console.ReadLine());
-            Console.WriteLine("Password: ");
+            Console.Write("Password: ");
             string password = Console.ReadLine();
 
             bool isAdult = age > 18;

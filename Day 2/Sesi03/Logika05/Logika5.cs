@@ -61,6 +61,7 @@ namespace Logika05
                     Console.WriteLine("Bulan ?");
                     break;
                 }
+                Console.ReadLine();
             }
         }
     }

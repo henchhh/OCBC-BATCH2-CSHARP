@@ -1,0 +1,8 @@
+YANG BELUM:
+- string2 (Live Coding)
+
+ASSIGNMENT 1:
+- Deadline besok, 24 November 2021, pukul 07:00
+- Cek di kode.id
+- Buat sebagus mungkin
+- Bisa tambah login + password

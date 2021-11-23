@@ -11,7 +11,6 @@ namespace Project2
 
             Console.WriteLine("Nilai A = "+nilai1);
             Console.WriteLine("Nilai B = "+nilai2);
-            Console.ReadLine();
         }
     }
 }

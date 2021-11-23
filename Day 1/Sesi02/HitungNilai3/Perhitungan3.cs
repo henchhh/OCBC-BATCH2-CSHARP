@@ -8,9 +8,9 @@ namespace HitungNilai3
         {
             int nilai1, nilai2;
 
-            Console.WriteLine("jumlah nilai1 = ");
+            Console.Write("jumlah nilai1 = ");
             nilai1 = int.Parse(Console.ReadLine());
-            Console.WriteLine("jumlah nilai2 = ");
+            Console.Write("jumlah nilai2 = ");
             nilai2 = int.Parse(Console.ReadLine());
 
             Console.WriteLine("Hasil perbandingan:");
