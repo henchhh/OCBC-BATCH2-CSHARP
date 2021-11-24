@@ -22,7 +22,7 @@ namespace Overriding01
 
     class overide : Program
     {
-        public virtual void penjumlahanperkaliandll()
+        public override void penjumlahanperkaliandll()
         {
             Console.WriteLine("Overriding 2.........-------->>>>>>>");
             Console.WriteLine("Hasil Pembagian angka {0} dan angka {1} = {2}", bilangan1, bilangan2, bilangan1/bilangan2);
