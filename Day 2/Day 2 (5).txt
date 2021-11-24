@@ -11,3 +11,5 @@ index 0 sampai index 3
 
 6821
 - index 3 jadi index 2
+
+ITERASI 1:
