@@ -59,6 +59,8 @@ namespace TodoApp
             {
                 endpoints.MapControllers();
             });
+
+            app.UseAuthentication();
         }
     }
 }
