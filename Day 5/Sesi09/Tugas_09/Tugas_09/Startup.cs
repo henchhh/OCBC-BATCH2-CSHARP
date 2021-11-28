@@ -26,8 +26,8 @@ namespace Tugas_09
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-
             services.AddControllers();
+            services.Add(new ServiceDescriptor(typeof(Models.EmployeeContext), new Models.EmployeeContext(Configuration.GetConnectionString("DefaultConnection"))));
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "Tugas_09", Version = "v1" });
