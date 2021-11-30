@@ -2,7 +2,7 @@ using System;
 using Xunit;
 using Moq;
 using UnitTest_Mock.Controllers;
-using UnitTest_Mock.Model;
+using UnitTest_Mock.Models;
 using UnitTest_Mock.Services;
 
 namespace UnitTesting
@@ -31,7 +31,7 @@ namespace UnitTesting
                 Name = "JK",
                 Designation = "SDE"  
             };
-            mock.Setup(p => p.GetEmployeeDetails(1)).ReturnsAsync("employeeDTO");
+            mock.Setup(p => p.GetEmployeeDetails(1)).ReturnsAsync(employeeDTO);
             EmployeeController emp = new EmployeeController(mock.Object);
             var result = await emp.GetEmployeeDetails(1);
             Assert.True(employeeDTO.Equals(result));

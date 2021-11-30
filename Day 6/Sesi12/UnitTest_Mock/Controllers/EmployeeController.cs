@@ -8,7 +8,7 @@ using UnitTest_Mock.Services;
 
 namespace UnitTest_Mock.Controllers
 {
-    [Route("api/controller")]
+    [Route("api/[controller]")]
     [ApiController]
     public class EmployeeController : ControllerBase
     {
