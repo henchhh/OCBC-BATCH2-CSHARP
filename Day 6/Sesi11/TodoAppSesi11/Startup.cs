@@ -19,11 +19,13 @@ using Microsoft.AspNetCore.Identity;
 using TodoAppSesi11.Configuration;
 using System.Text;
 using Microsoft.IdentityModel.Tokens;
+//using CrossOrigin.WebService.Models.DbEntities;
 
 namespace TodoAppSesi11
 {
     public class Startup
     {
+        readonly string MyAllowSpecificOrigins = "_myAllowSpecificOrigins";
         public Startup(IConfiguration configuration)
         {
             Configuration = configuration;
@@ -43,6 +45,28 @@ namespace TodoAppSesi11
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "TodoAppSesi11", Version = "v1" });
+
+                c.AddSecurityDefinition("Bearer",new OpenApiSecurityScheme()
+                {
+                    Name = "Authorization",
+                    Type = SecuritySchemeType.ApiKey,
+                    Scheme = "Bearer",
+                    BearerFormat = "JWT",
+                    In = ParameterLocation.Header,
+                    Description = "Enter 'Bearer' [space] and then your valid token in the text input below.\r\n\r\nExample: \"Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9\""
+                });
+
+                c.AddSecurityRequirement(new OpenApiSecurityRequirement {
+                    {
+                        new OpenApiSecurityScheme {
+                            Reference = new OpenApiReference {
+                                            Type = ReferenceType.SecurityScheme,
+                                            Id = "Bearer"
+                                        }
+                        },
+                        new string[] { }
+                    }
+                });
             });
             
             var key = Encoding.ASCII.GetBytes(Configuration["JwtConfig:Secret"]);
@@ -93,6 +117,8 @@ namespace TodoAppSesi11
             app.UseAuthorization();
             
             app.UseAuthentication();
+
+            app.UseCors(MyAllowSpecificOrigins);
 
             app.UseEndpoints(endpoints =>
             {
