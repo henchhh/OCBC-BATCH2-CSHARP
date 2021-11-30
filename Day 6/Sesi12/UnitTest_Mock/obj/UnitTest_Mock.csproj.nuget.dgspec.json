@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\deand\\Documents\\OCBC-BATCH2-CSHARP\\Day 6\\Sesi12\\UnitTest_Mock\\UnitTest_Mock\\UnitTest_Mock.csproj": {}
+    "C:\\Users\\deand\\Documents\\OCBC-BATCH2-CSHARP\\Day 6\\Sesi12\\UnitTest_Mock\\UnitTest_Mock.csproj": {}
   },
   "projects": {
-    "C:\\Users\\deand\\Documents\\OCBC-BATCH2-CSHARP\\Day 6\\Sesi12\\UnitTest_Mock\\UnitTest_Mock\\UnitTest_Mock.csproj": {
+    "C:\\Users\\deand\\Documents\\OCBC-BATCH2-CSHARP\\Day 6\\Sesi12\\UnitTest_Mock\\UnitTest_Mock.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\deand\\Documents\\OCBC-BATCH2-CSHARP\\Day 6\\Sesi12\\UnitTest_Mock\\UnitTest_Mock\\UnitTest_Mock.csproj",
+        "projectUniqueName": "C:\\Users\\deand\\Documents\\OCBC-BATCH2-CSHARP\\Day 6\\Sesi12\\UnitTest_Mock\\UnitTest_Mock.csproj",
         "projectName": "UnitTest_Mock",
-        "projectPath": "C:\\Users\\deand\\Documents\\OCBC-BATCH2-CSHARP\\Day 6\\Sesi12\\UnitTest_Mock\\UnitTest_Mock\\UnitTest_Mock.csproj",
+        "projectPath": "C:\\Users\\deand\\Documents\\OCBC-BATCH2-CSHARP\\Day 6\\Sesi12\\UnitTest_Mock\\UnitTest_Mock.csproj",
         "packagesPath": "C:\\Users\\deand\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\deand\\Documents\\OCBC-BATCH2-CSHARP\\Day 6\\Sesi12\\UnitTest_Mock\\UnitTest_Mock\\obj\\",
+        "outputPath": "C:\\Users\\deand\\Documents\\OCBC-BATCH2-CSHARP\\Day 6\\Sesi12\\UnitTest_Mock\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\deand\\AppData\\Roaming\\NuGet\\NuGet.Config",
