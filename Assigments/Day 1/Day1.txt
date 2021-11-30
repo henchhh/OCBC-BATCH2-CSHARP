@@ -1,0 +1,132 @@
+
+tools  windows
+jdk dan jre	8-11	httpswww.openlogic.comopenjdk-downloads
+jdk dan jre 8		httpswww.oracle.comjavatechnologiesjavasejavase8-archive-downloads.html#license-lightbox
+
+dot net core 4.8  5	httpsdotnet.microsoft.comdownloaddotnet5.0
+dotnet core 3			httpsdotnet.microsoft.comdownloaddotnet3.1
+dot net core		httpsdotnet.microsoft.comdownload
+
+
+docker			httpsdocs.docker.comdesktopwindowsinstall
+wsl 2			httpsdocs.microsoft.comen-gbwindowswslinstall-manual#step-4---download-the-linux-kernel-update-package
+download wsl 2	httpswslstorestorage.blob.core.windows.netwslblobwsl_update_x64.msi
+
+remove docker setup 
+lokasi		CUsersherisAppDataRoamingDocker
+file		settings.json
+
+git			httpsgit-scm.comdownloadwin
+			httpsgit-scm.com
+						
+heroku		httpscli-assets.heroku.comheroku-x64.exe
+			httpsdevcenter.heroku.comarticlesheroku-cli
+
+config mono
+lokasi		CProgram FilesMonobin
+windows + r  CWindowssystem32rundll32.exe sysdm.cpl,EditEnvironmentVariables
+			 SystemPropertiesAdvanced		
+menu user variabel  path  edit  new add lokasi mono  CProgram FilesMonobin  save
+----------------------------------------------------------------
+
+tutorial c#
+
+cek version tools
+mcs compiler	mcs --version
+mono			mono --version
+git 			git --version
+heroku			heroku --version
+node js			node --version
+npm				npm --version
+
+config code runner
+csharp  cd $dir && mcs $fileName -out$fileNameWithoutExt && mono $fileNameWithoutExt,
+
+extension code runner
+checklist 			code-runner	 run in terminal
+setting in json 	code-runner  ketikan code-runner.executorMap
+	
+
+install library dotnet-ef
+---
+dotnet tool install --global dotnet-ef
+
+create hello app
+---
+dotnet new console
+dotnet run
+
+mcs hello.cs  untuk compile
+mono hello.exe  mono untuk ekekusi  running
+
+
+-------------------------------
+
+check git current username & email
+---
+git config --list
+
+change config
+---
+git config --global user.name Nama
+git config --global user.email email
+git config --global credential.username username
+
+pindah branch 
+---
+git checkout -b main
+git checkout -b master
+
+cek branch
+---
+git status
+
+remote branch
+---
+git branch local branch
+git branch -r remote branch
+git branch -a all local and remote branch
+
+git remote
+---
+git remote add origin httpsgithub.comusernamenamarepo.git
+git remote set-url origin git@github.comusernamenamarepo.git
+
+remove semua repositori
+---
+rm -rf .git
+
+git linked check remote
+---
+git remote -v
+
+bermain git
+---
+NEW GIT
+git init
+git config --global user.email "you@example.com"
+git config --global user.name "Your Name"
+git remote add origin https://github.com/henchhh/OCBC-BATCH2-CSHARP.git
+git remote set-url https://github.com/henchhh/OCBC-BATCH2-CSHARP.git
+git commit -m "Belajar C#"
+git checkout -b main
+git pull origin main --allow-unrelated-histories
+git push -u origin main
+git add README.md
+
+UPDATE FROM LOCAL TO github
+git init
+git add -A
+git commit -m "bebas isinya"
+git checkout main
+git pull origin main --allow-unrelated-histories
+git push -u origin main
+
+
+referensi
+---
+httpswww.nobledesktop.comlearngitgit-branches
+httpsstackoverflow.comquestions1213430how-to-fully-delete-a-git-repository-created-with-init
+httpsstackoverflow.comquestions22844806how-to-change-my-git-username-in-terminal36782014
+httpswww.niagahoster.co.idbloggit-tutorial-dasar
+httpsstackoverflow.comquestions37937984git-refusing-to-merge-unrelated-histories-on-rebase

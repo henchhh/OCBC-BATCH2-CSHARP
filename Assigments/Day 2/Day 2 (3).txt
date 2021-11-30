@@ -1,0 +1,16 @@
+temp = 2
+input = 1
+factorial = 2
+
+temp = 1
+input = 0
+
+
+                do
+                {
+                    temp = input;
+                    input -= 1;
+                    factorial = temp*input;
+                }
+                while(input!=1);
+                Console.Write(factorial);

@@ -1,0 +1,17 @@
+"C:\Program Files\Microsoft SQL Server\MSSQL15.MSSQLSERVER\MSSQL\Binn\sqlservr.exe" -sMSSQLSERVER
+
+BUAT FOLDER JIKA 1 APLIKASI:
+- Sesi12
+* UnitTest_Mock
+**sesuai kode.id
+
+* UnitTesting
+**EmployeeTest.cs
+**UnitTest.cs
+*** controller yang ada di employee test di call melalui unittest > menuju folder unittest_mock)
+
+JIKA:
+- 1 aplikasi 1 folder = tidak perlu call melalui unittest > menuju folder unittest_mock
+* controller, model, unittest > unittest.cs
+
+- 1 aplikasi beda folder (2 folder) = perlu call melalui unittest > menuju folder unittest_mock

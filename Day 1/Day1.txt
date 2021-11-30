@@ -107,7 +107,12 @@ git init
 git config --global user.email "you@example.com"
 git config --global user.name "Your Name"
 git remote add origin https://github.com/henchhh/OCBC-BATCH2-CSHARP.git
+// git remote add origin https://github.com/henchhh/corewebapisample.git
+// git remote add origin https://github.com/henchhh/final-project-1-dean.git
 git remote set-url https://github.com/henchhh/OCBC-BATCH2-CSHARP.git
+// git remote set-url https://github.com/henchhh/corewebapisample.git
+// git remote set-url https://github.com/henchhh/final-project-1-dean.git
+git add -A
 git commit -m "Belajar C#"
 git checkout -b main
 git pull origin main --allow-unrelated-histories
@@ -121,6 +126,13 @@ git commit -m "bebas isinya"
 git checkout main
 git pull origin main --allow-unrelated-histories
 git push -u origin main
+
+EDIT:
+git add * 
+git stash
+git pull
+
+git config core.autocrlf true
 
 
 referensi

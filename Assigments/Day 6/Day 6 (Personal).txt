@@ -1,0 +1,44 @@
+dotnet new webapi -n "TodoAppWithJWT" -lang "C#" -au none
+cd TodoAppWithJWT
+dotnet add package Microsoft.EntityFrameworkCore.Sqlite --version 5.0.11
+dotnet add package Microsoft.EntityFrameworkCore.Tools --version 5.0.11
+dotnet add package Microsoft.AspNetCore.Identity.EntityFrameworkCore --version 5.0.11
+dotnet add package Microsoft.AspNetCore.Authentication.JwtBearer --version 5.0.11
+dotnet add package Microsoft.AspNetCore.Identity.UI --version 5.0.11
+//dotnet add package Microsoft.EntityFrameworkCore.Design --version 5.0.11
+//dotnet add package Microsoft.EntityFrameworkCore --version 5.0.11
+//dotnet add package Microsoft.EntityFrameworkCore.SqlServer --version 5.0.11
+
+dotnet ef migrations add "Adding authentication to our Api"
+atau
+dotnet ef migrations add "Initial Migrations"
+atau
+dotnet ef migrations add "initial"
+lalu
+dotnet ef migrations add "Added refresh tokens table"
+lalu
+dotnet ef database update
+
+=== CREDENTIALS ===
+{
+"username": "test@bootcamp.com",
+"email": "test@bootcamp.com",
+"password": "Passw0rd1@1"
+}
+
+
+=== AUTHORIZED IN SWAGGER (File Startup.cs) ===
+
+
+
+TOKEN:
+eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJJZCI6IjViM2Y1Y2YwLTZkNjItNGM3ZS1hY2YyLTM5N2I2OWNkZmFiNCIsImVtYWlsIjoidGVzdEBib290Y2FtcC5jb20iLCJzdWIiOiJ0ZXN0QGJvb3RjYW1wLmNvbSIsImp0aSI6ImQ3ZDkzODcwLWNkNzctNDQyNS1iNmQ5LWNiNmRlNTQ4ODhlYyIsIm5iZiI6MTYzODE2NTQ1MiwiZXhwIjoxNjM4MTY1NTEyLCJpYXQiOjE2MzgxNjU0NTJ9.3qPbrhZkhkhnUbeJTzyt_ERF2r-jnfdKCtgXNpjs70s
+====================
+
+=== TOKEN ===
+dean2 = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJJZCI6IjcyNmRjYmFiLWI4OTQtNDQwYy1hOWE2LWUyZTllMjkyZjJhYyIsImVtYWlsIjoiZGVhbjJAYm9vdGNhbXAuY29tIiwic3ViIjoiZGVhbjJAYm9vdGNhbXAuY29tIiwianRpIjoiMmVhZDcxYjgtMzUxZC00ZGU0LWFiYjgtYTNhZDNjYjYwY2NhIiwibmJmIjoxNjM4MTU0NTMyLCJleHAiOjE2MzgxNzYxMzIsImlhdCI6MTYzODE1NDUzMn0._MlssOWNpyyFu1_FhOuRO-ufBj_bNSUSIDa-2lhtDCM
+
+=== AUTHORIZATION POSTMAN ===
+1. Header
+2. Tambah Key baru = Authorization
+3. Value = Bearer [token]

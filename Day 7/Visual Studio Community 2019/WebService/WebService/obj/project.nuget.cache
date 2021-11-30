@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "dgSpecHash": "EaVZ3uKRCBf5CczUl2QmfU9KN6NYJF+MqbUSaLME11NV5L7XQCbgoRZ7EK+0+jPOHzF3t4jA0Cl7JSJGUH6lKQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\deand\\Documents\\OCBC-BATCH2-CSHARP\\Day 7\\Sesi13\\WebService\\WebService\\WebService.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\deand\\.nuget\\packages\\microsoft.extensions.apidescription.server\\3.0.0\\microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
+    "C:\\Users\\deand\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
+    "C:\\Users\\deand\\.nuget\\packages\\swashbuckle.aspnetcore\\5.6.3\\swashbuckle.aspnetcore.5.6.3.nupkg.sha512",
+    "C:\\Users\\deand\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\5.6.3\\swashbuckle.aspnetcore.swagger.5.6.3.nupkg.sha512",
+    "C:\\Users\\deand\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\5.6.3\\swashbuckle.aspnetcore.swaggergen.5.6.3.nupkg.sha512",
+    "C:\\Users\\deand\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\5.6.3\\swashbuckle.aspnetcore.swaggerui.5.6.3.nupkg.sha512"
+  ],
+  "logs": []
+}

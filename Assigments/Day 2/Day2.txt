@@ -1,0 +1,68 @@
+ASSIGNMENT 1:
+- Deadline besok, 24 November 2021, pukul 07:00
+- Cek di kode.id
+- Buat sebagus mungkin
+- Bisa tambah login + password
+
+BEBERAPA YANG DAPAT DIPELAJARI NANTI:
+- Cloud vps
+- Shared hosting
+- Cpanel > file manager > upload file project
+- Ada update project
+- Menggunakan git > akses ssh > login > menuju folder project home/domain/project
+- vhost
+
+GIT:
+- git clone (pc atau folder baru)
+- git stash (jika ada perubahan) atau git pull (jika tidak ada perubahan)
+
+KALAU ADA YG EDIT:
+- git stash (balikin ke data awal)
+
+COBA:
+- Rest di Chrome Marketplace
+
+TUGAS:
+ngebalik Jagged, pakai function
+
+CATATAN:
+int input = Convert.ToInt32(Console.ReadLine());
+
+NOTE:
+format tugas assignment 1
+
+folder kodepeserta_namapeserta_assignment1
+- nama file kodepeserta_namapeserta_assignment1.cs
+- panduan penggunaan.txt 
+  - terdapat cara pakai aplikasi
+  - terdapat link github (push ke github)
+di zipkan kasih nama kodepeserta_namapeserta_assignment1.zip
+sample 001_arifsetiawan_assignment1.zip
+
+upload ke google class room
+
+buat 1 file project assigment 1
+di dalam nya terdapat jawaban 5 soal
+
+sample
+---
+selamat datang di assigment 1
+
+nama lengkap saya : arif
+nomor peserta : 001 (lengkap)
+alamat : bandar lampung
+
+pilih menu soal
+1. soal a (disingkat aja untuk deskripsi soalnya)
+2. soal b (disingkat aja untuk deskripsi soalnya)
+3. soal c (disingkat aja untuk deskripsi soalnya)
+4. soal d (disingkat aja untuk deskripsi soalnya)
+5. soal e (disingkat aja untuk deskripsi soalnya)C:\Users\User\003_Alwi Azra Akbar Djunaid_Assignment1\Program.cs
+6. about / tentang saya
+7. exit
+
+jika pilih 1 akan nampil jawaban soal a, sample :
+anda memilih soal a
+jawaban soal a adalah (isi jawban disini)
+
+kembali kemenu awal ? jawab ya > masuk kemenu awal

@@ -1,0 +1,113 @@
+nama repo: corewebapisample
+trus push ke repo
+
+Database gratis:
+- Postgre heroku
+* heroku postgre
+* import database
+* 
+
+- Free mysql online
+
+------------------------------
+
+[FINAL PROJECT]
+
+database migrations:
+- "Initial Migrations"
+- dotnet ef database update
+- "Adding authentication to our Api"
+- dotnet ef database update
+- "Added refresh tokens table"
+- dotnet ef database update
+- "initial"
+- dotnet ef database update
+
+------------------------------
+
+[running docker]
+
+Start-Process 'C:\Program Files\Docker\Docker\Docker Desktop.exe'
+
+docker run -d -p 80:80 docker/getting-started
+
+-d - run the container in detached mode (in the background)
+-p 80:80 - map port 80 of the host to port 80 in the container
+docker/getting-started - the image to use
+
+--------------------------------
+
+dotnet publish -c Release (Untuk bikin .dll)
+
+--------------------------------
+
+docker build -t [NAMA_APP]:dev .
+//docker build -t carter-api .
+docker run -it -d -p 5000:80 --name [desiredname] [environmentname]:dev
+//docker run -it -d -p 5000:80 --name CharterApi WebService:dev
+[ini bagian push api ke git]
+heroku login	
+heroku update
+heroku git:remote -a carter-api-dean (ini repository di heroku)
+heroku buildpacks:set jincod/dotnetcore
+[ini bagian konekin heroku ke git]
+c# buildpacks link = https://buildpack-registry.s3.amazonaws.com/buildpacks/jincod/dotnetcore.tgz
+Ke web heroku buat deploy
+Enable auto deploy
+
+Heroku link = https://carter-api-dean.herokuapp.com/ deployed to Heroku
+
+--------------------------------
+
+docker pull mcr.microsoft.com/dotnet/sdk
+
+--------------------------------
+
+docker pull mcr.microsoft.com/dotnet/sdk:5.0.403
+
+--------------------------------
+
+heroku container:push web -a carter-api
+
+--------------------------------
+
+[Dockerfile]
+
+#See https://aka.ms/containerfastmode to understand how Visual Studio uses this Dockerfile to build your images for faster debugging.
+
+FROM mcr.microsoft.com/dotnet/aspnet:5.0 AS base
+WORKDIR /app
+EXPOSE 80
+EXPOSE 443
+EXPOSE 48719
+EXPOSE 27017
+EXPOSE 5000
+EXPOSE 5001
+
+
+FROM mcr.microsoft.com/dotnet/sdk:5.0 AS build
+WORKDIR /src
+COPY . .
+
+#COPY ["CoreWebApi/CoreWebApi.csproj", "CoreWebApi/"]
+#RUN dotnet restore "CoreWebApi/CoreWebApi.csproj"
+#COPY . .
+#WORKDIR "/src/CoreWebApi"
+#RUN dotnet build "CoreWebApi.csproj" -c Release -o /app/build
+
+RUN dotnet restore 
+RUN dotnet build --no-restore -c Release -o /app
+
+FROM build AS publish
+RUN dotnet publish "CoreWebApi.csproj" -c Release -o /app/publish
+
+FROM base AS final
+WORKDIR /app
+#COPY --from=publish /app/publish .
+COPY --from=publish /app/ .
+#ENTRYPOINT ["dotnet", "CoreWebApi.dll"]
+CMD ASPNETCORE_URLS=http://*:$PORT dotnet CoreWebApi.dll
+
+---------------------------------------------------------
+
+docker scan

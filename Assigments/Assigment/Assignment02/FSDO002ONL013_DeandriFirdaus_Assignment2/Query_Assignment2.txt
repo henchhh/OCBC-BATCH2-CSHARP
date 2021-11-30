@@ -1,0 +1,3 @@
+NamaPeserta   : Deandri Firdaus
+Kode Peserta  : FSDO002ONL013
+Tugas         : Assigment 2

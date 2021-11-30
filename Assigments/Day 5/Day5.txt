@@ -1,0 +1,22 @@
+tugas 9:
+- seperti biasa di push
+- tampil tambahkan panduan cara menggunakan crud
+- create data
+- update data
+- delete data
+- view data
+
+- tata cara penggunaan
+- postmane > save workspace/collection api > 
+
+- Folder = Tugas_09
+- Buat di dalam Tugas_09 = readme.txt
+- Isi readmet.txt =
+* Kode peserta:
+* Nama peserta:
+* Struktur Folder:
+- Sesi09/Kantor_WebAPI
+- Sesi09/Tugas_09 atau Sesi09/Tugas_09
+* Tata cara penggunaan aplikasi Tugas 9:
+* - CRUD
+* - Postman -> Save collection dan workspace

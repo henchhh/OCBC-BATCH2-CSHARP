@@ -1,0 +1,10 @@
+- Java version = 8
+- Jmeter version = 5.4
+
+1. download plugin jmeter
+2. copy plugin pada directory jmeter/lib/ext
+3. dotnet run UnitTest_mock
+4. test Swagger --> http://localhost:5001/swagger/index.html
+5. open jmeter -> option -> plugin manager -> checklist sesuai https://jmeter-plugins.org/wiki/PluginsManager/
+
+User-Agent = Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.103 Safari/537.36
