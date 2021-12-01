@@ -13,12 +13,18 @@ Database gratis:
 
 [Heroku Link] = https://final-projects-1-dean.herokuapp.com/
 
+Change database to:
+Latin-1
+Latin-1-general-ci
+
+After that = Migrate
+
 ------------------------------
 
 [Accounts]
 
-  "username": "dean@bootcamp.com",
-  "email": "dean@bootcamp.com",
+  "username": "dean1@bootcamp.com",
+  "email": "dean1@bootcamp.com",
   "password": "Passw0rd1@1"
 
 ------------------------------
@@ -28,16 +34,25 @@ Database gratis:
 Secret for JwtConfig = wddasnyuhzwpgvvsunzllsvanzlnliez
 
 [MySQL ConnectionString]
-UseMySQL
+Startup.cs = UseMySql
 "obj_name" : "Server=localhost;Port=3306;Database=assignment3;Uid=root;Pwd="
 
 [SQL Server ConnectionString]
+Startup.cs = UseSqlServer
 "obj_name" : "server=(local); database=UnitTest; Trusted_Connection=True;"
 "DbConnection" : "Server=localhost;Port=3306;Database=assignment3;Uid=root;Pwd="
 
 [SQLite ConnectionString]
-UseSqlite
+Startup.cs = UseSqlite
 "obj_name" : "DataSource=app.db;Cache=Shared"
+
+------------------------------
+
+[Swagger in Docker]
+
+docker run -p 80:80 swaggerapi/swagger-ui
+docker run -p 80:80 -e SWAGGER_JSON=/ProjectApp/swagger.json -v /bar:/ProjectApp swaggerapi/swagger-ui
+docker run -p 80:80 -e SWAGGER_JSON=/foo/swagger.json -v /bar:/foo swaggerapi/swagger-ui
 
 ------------------------------
 
@@ -85,11 +100,12 @@ dotnet publish -c Release (Untuk bikin .dll)
 [THE STEPS PLEASE LOOK HERE]
 
 dotnet build (create dll)
+dotnet build -c Release
 dotnet build --no-restore -c Release -o /app (create dll if forgot after docker build)
 docker build -t [NAMA_APP]:dev .
 //docker build -t carter-api .
 docker run -d -p 5000:80 --name [desiredname] [environmentname]:dev
-//docker run -it -d -p 5000:80 --name CharterApi WebService:dev
+//docker run -d -p 5000:80 --name CharterApi WebService:dev
 [ini bagian push api ke git]
 heroku login	
 heroku update
@@ -181,6 +197,11 @@ dotnet add package Microsoft.AspNetCore.Identity.EntityFrameworkCore --version 5
 dotnet add package Microsoft.AspNetCore.Authentication.JwtBearer --version 5.0.11
 dotnet add package Microsoft.AspNetCore.Identity.UI --version 5.0.11
 dotnet add package Microsoft.EntityFrameworkCore.Design --version 5.0.11
-dotnet add package MySql.Data.EntityFrameworkCore --version 5.0.11
+dotnet add package Pomelo.EntityFrameworkCore.MySql --version 5.0.0-alpha.2
+dotnet add package MySql.EntityFrameworkCore --version 5.0.8
+dotnet remove package Pomelo.EntityFrameworkCore.MySql
+dotnet remove package MySql.Data.EntityFrameworkCore
+dotnet add package Pomelo.EntityFrameworkCore.MySql 5.0.0-alpha.1.20513.5
 //dotnet add package Microsoft.EntityFrameworkCore --version 5.0.11
 //dotnet add package Microsoft.EntityFrameworkCore.SqlServer --version 5.0.11
+MySql.Data" Version="8.0.27"

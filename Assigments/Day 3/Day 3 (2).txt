@@ -1,7 +1,0 @@
-select id_siswa, nama_siswa, id_kabupaten, nama_kabupaten
-from table_siswa a
-join table_kabupaten b
-on a.id_kabupaten = b.id_kabupaten
-
-
-

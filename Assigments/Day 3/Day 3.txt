@@ -1,6 +1,0 @@
-ERROR:
-- konsep (JALAN)
-- encapsulation (JALAN)
-- inheritance (JALAN)
-- overloading (JALAN)
-- overriding (JALAN)
