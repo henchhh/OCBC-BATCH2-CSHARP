@@ -1,3 +1,6 @@
+dotnet new webapi -n "Nama_projekataufolder" -lang "C#" -au none
+
+
 
 tools  windows
 jdk dan jre	8-11	httpswww.openlogic.comopenjdk-downloads

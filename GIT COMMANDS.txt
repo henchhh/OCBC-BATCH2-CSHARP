@@ -1,0 +1,25 @@
+DARI AWAL:
+git init
+git config --global user.email "email"
+git config --global user.name "name"
+git remote add origin [github with .git]
+git remote set-url [github with .git]
+git add A.
+git commit -m "keterangan commit"
+git checkout -b main
+git pull origin main --allow-unrelated-histories
+git push -u origin main
+
+UPDATE:
+git init
+git remote add origin [github with .git]
+git remote set-url [github with .git]
+git add -A
+git commit -m "keterangan commit"
+git checkout main
+git pull origin main --allow-unrelated-histories
+git push -u origin main
+
+CLONE:
+git init
+git clone [github with git]
